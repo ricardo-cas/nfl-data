@@ -1,10 +1,23 @@
 import './App.css';
+import { Hero } from '../src/components/hero';
+import { useEffect } from 'react';
+import { fechData } from '../src/lib/fech-data'
 
 function App() {
+  const apiData = async () => {
+    const data = await fechData();
+    console.log(data);
+
+  }
+
+  useEffect(() => {
+    apiData()
+  })
+
   return (
-    <div className="App">
-      Hello World! by Ricas;
-    </div>
+    <>
+      <Hero></Hero>
+    </>
   );
 }
 
