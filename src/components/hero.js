@@ -5,7 +5,7 @@ export function Hero() {
         <>
             <section>
 
-                <div className="hero bg-base-200 min-h-screen bg-white">
+                <div className="hero bg-base-200 min-h-screen">
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <img
                             src="https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png"
